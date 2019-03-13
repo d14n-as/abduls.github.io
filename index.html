@@ -67,9 +67,9 @@
         <div class="row" style="-webkit-box-shadow: 0px 0px 5px 0px rgba(201, 201, 201, 0.75);-moz-box-shadow: 0px 0px 5px 0px rgba(201, 201, 201, 0.75);box-shadow: 0px 0px 5px 0px rgba(201, 201, 201, 0.75);">
             <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2">
                 <div class="d-flex justify-content-center" style="margin-bottom:30px;margin-top:20px;">
-                    <img src="/img/fav.png" class="rounded-circle img-responsive center-align d-md-none d-lg-none d-xl-none" width="150" height="150" style="box-shadow:2px 3px 3px #d3d3d3;">
+                    <img src="/img/fav.png" class="rounded-circle img-responsive center-align d-md-none d-lg-none d-xl-none" width="150" height="150" style="box-shadow:2px 8px 15px #d3d3d3">
                 </div>
-                <img src="/img/fav.png" class="rounded-circle img-responsive d-none d-md-block" width="150" height="150" style="box-shadow:2px 3px 3px #d3d3d3;">
+                <img src="/img/fav.png" class="rounded-circle img-responsive d-none d-md-block" width="150" height="150" style="box-shadow:2px 8px 15px #d3d3d3;margin-left:9px;">
             </div>
             <div class="col-sm-12 col-md-10 col-lg-10 col-xl-10" style="padding-top:20px;">
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -175,6 +175,36 @@
         </div>
     </div>
 
+    <table border="1" cellpadding="3" id="printTable">
+        <tbody>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>		
+                <th>Points</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>		
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>		
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>		
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>Adam</td>
+                <td>Johnson</td>		
+                <td>67</td>
+            </tr>
+        </tbody>
+    </table>
+
 
 
 	
@@ -194,6 +224,19 @@
         }
         $('.panel-group').on('hidden.bs.collapse', toggleIcon);
         $('.panel-group').on('shown.bs.collapse', toggleIcon);
+
+        function printData()
+            {
+            var divToPrint=document.getElementById("printTable");
+            newWin= window.open("");
+            newWin.document.write(divToPrint.outerHTML);
+            newWin.print();
+            newWin.close();
+            }
+
+            $('button').on('click',function(){
+            printData();
+            })
     </script>
 </body>
 </html>
