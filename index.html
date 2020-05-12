@@ -22,7 +22,7 @@
     <title>DIAN ABDUL SYAHID</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head> 
 <style>
     * {
@@ -74,7 +74,18 @@
 </style>
 <body> 
 
-    <div class="container" style="margin-top:7px;margin-bottom: 7px;padding-left:20px;padding-right: 20px;">
+    
+    <div class="container" style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+    ">
+
         <div class="row" style="-webkit-box-shadow: 0px 0px 5px 0px rgba(201, 201, 201, 0.75);-moz-box-shadow: 0px 0px 5px 0px rgba(201, 201, 201, 0.75);box-shadow: 0px 0px 5px 0px rgba(201, 201, 201, 0.75);">
             <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2">
                 <div class="d-flex justify-content-center" style="margin-bottom:30px;margin-top:20px;">
@@ -89,8 +100,8 @@
                             <div class="panel-heading" role="tab" id="headingOne">
                                 <h4 class="panel-title">
                                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color:#000;">
-                                        <i class="more-less glyphicon glyphicon-plus"></i>
-                                        <strong style="font-size:25px;">Profile.</strong>
+                                        <strong style="font-size:1rem;">Profile.</strong>
+                                        <i class="more-less">Seeking Human Kindness?</i>
                                     </a>
                                 </h4>
                             </div>
@@ -114,34 +125,34 @@
                             <div class="panel-heading" role="tab" id="headingTwo">
                                 <h4 class="panel-title">
                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color:#000;">
-                                        <i class="more-less glyphicon glyphicon-plus"></i>
-                                        <strong style="font-size:25px;">Skillsets.</strong>
+                                        <strong style="font-size:1rem;">Skillsets.</strong>
+                                        <i class="more-less">Do you Think The Unthinkable?</i>
                                     </a>
                                 </h4>
                             </div>
                             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                 <div class="panel-body">
                                     <ul style="padding-left:20px;">
-                                        <li style="margin-bottom:10px"><strong>Slicing with Framework</strong>
-                                            <ul style="list-style-type:none;padding-left:20px;">
+                                        <li style="margin-bottom:10px;list-style-type: none;"><strong>Slicing with Framework</strong>
+                                            <ul style="list-style-type:none;padding-left:20px;font-size:13px">
                                                 <li><img src="img/bootstrap.png" width="20px" height="20px">&nbsp;&nbsp;Bootstrap</li>
                                                 <li><img src="img/mater.png" width="30px" height="30px">&nbsp;&nbsp;MaterializeCSS</li>
                                                 <li><img src="img/uikit.png" width="20px" height="20px">&nbsp;&nbsp;UIKit</li>
                                             </ul>
                                         </li>
-                                        <li style="margin-bottom:10px"><strong>Using Design Applications</strong>
-                                            <ul style="list-style-type:none;padding-left:20px;">
+                                        <li style="margin-bottom:10px;list-style-type: none"><strong>Using Design Applications</strong>
+                                            <ul style="list-style-type:none;padding-left:20px;font-size:13px">
                                                 <li><img src="img/photoshop.png" width="20px" height="20px">&nbsp;&nbsp;Adobe Photoshop</li>
                                                 <li><img src="img/ai.png" width="20px" height="20px">&nbsp;&nbsp;Adobe Illustrator</li>
                                             </ul>
                                         </li>
-                                        <li style="margin-bottom:10px"><strong>Creating Newsletter Template</strong>
-                                            <ul style="list-style-type:none;padding-left:20px;">
+                                        <li style="margin-bottom:10px;list-style-type:none"><strong>Creating Newsletter Template</strong>
+                                            <ul style="list-style-type:none;padding-left:20px;font-size:13px">
                                                 <li><img src="img/mailchimp.png" width="20px" height="20px">&nbsp;&nbsp;Mailchimp</li>
                                             </ul>
                                         </li>
-                                        <li style="margin-bottom:10px"><strong>Frontend Workflow</strong>
-                                            <ul style="list-style-type:none;padding-left:20px;">
+                                        <li style="margin-bottom:10px;list-style-type:none"><strong>Frontend Workflow</strong>
+                                            <ul style="list-style-type:none;padding-left:20px;font-size:13px">
                                                 <li><img src="img/html.png" width="30px" height="30px">&nbsp;&nbsp;HTML5</li>
                                                 <li><img src="img/css.png" width="30px" height="30px">&nbsp;&nbsp;CSS3</li>
                                                 <li><img src="img/jquery.png" width="30px" height="30px">&nbsp;&nbsp;Jquery</li>
@@ -150,8 +161,8 @@
                                                 <li><img src="img/gulp.png" width="30px" height="30px">&nbsp;&nbsp;GULP</li>
                                             </ul>
                                         </li>
-                                        <li><strong>Know About</strong>
-                                            <ul style="list-style-type:none;padding-left:20px;">
+                                        <li style="list-style-type: none"><strong>Know About</strong>
+                                            <ul style="list-style-type:none;padding-left:20px;font-size:13px">
                                                 <li><img src="img/wordpress.png" width="20px" height="20px">&nbsp;&nbsp;Wordpress</li>
                                             </ul>
                                         </li>
@@ -164,31 +175,76 @@
                             <div class="panel-heading" role="tab" id="headingThree">
                                 <h4 class="panel-title">
                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color:#000;">
-                                        <i class="more-less glyphicon glyphicon-plus"></i>
-                                        <strong style="font-size:25px;">Work Experiences.</strong>
+                                        <strong style="font-size:1rem;">Work Experiences.</strong>
+                                        <i class="more-less">Act Like Entrepreneur, Think Like Scientist. Just Like?</i>
                                     </a>
                                 </h4>
                             </div>
                             <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                <div class="panel-body">
+                                <div class="panel-body" style="margin-top:50px;padding-bottom:50px;">
                                     
-                                <p style="font-size:15px;font-family: 'Montserrat', sans-serif;font-weight: 100;">
-                                    Frontend Web Developer : PT Kompas Cyber Media<br/>
-                                    <span><a href="https://kompas.com" target="_blank">www.kompas.com</a></span>
-                                    </p>
-                                    <p style="font-size:15px;font-family: 'Montserrat', sans-serif;font-weight: 100;">
-                                    Frontend Web Developer : PT Citra Mediatama Indonesia <br/>
-                                    <span><a href="https://leegea.com" target="_blank">www.leegea.com</a></span> |
-                                    <span><a href="https://leegea.tv" target="_blank">www.leegea.tv</a></span>
-                                    </p>
-                                    <p style="font-size:15px;font-family: 'Montserrat', sans-serif;font-weight: 100;">
-                                    Frontend Web Developer : Erasys Group<br/>
-                                    <span><a href="https://www.bigindigital.com/" target="_blank">www.bigindigital.com</a></span>
-                                    </p>
-                                    <p style="font-size:15px;font-family: 'Montserrat', sans-serif;font-weight: 100;">
-                                        Jr. Frontend Web Developer : PT Vidha Inti Prajapti<br/>
-                                        <span><a href="https://narrada.com/" target="_blank">www.narrada.com</a></span>
+                                   
+                                    <div class="row" style="width: 100%;">
+                                        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                            <figure style="float: left;margin-right: 15px;">
+                                                <img src="img/kompas.png" alt="kompas" class="img-responsive">
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9">
+                                            <p style="font-size:13px;font-family: 'Montserrat', sans-serif;font-weight: 100;">
+                                        Frontend Web Developer : PT Kompas Cyber Media<br/>
+                                        <span><a href="https://kompas.com" target="_blank">www.kompas.com</a></span>
+                                                </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                            <figure style="float: left;margin-right: 15px;">
+                                                <img src="img/leegea.png" alt="leegea" class="img-responsive">
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9">
+
+                                             <p style="font-size:13px;font-family: 'Montserrat', sans-serif;font-weight: 100;">
+                                            Frontend Web Developer : PT Citra Mediatama Indonesia <br/>
+                                            <span><a href="https://leegea.com" target="_blank">www.leegea.com</a></span> |
+                                            <span><a href="https://leegea.tv" target="_blank">www.leegea.tv</a></span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                            <figure style="float: left;margin-right: 15px;">
+                                                <img src="img/big.png" alt="big" class="img-responsive">
+                                            </figure>
+                                        </div>
+
+                                            <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9">
+
+                                                <p style="font-size:13px;font-family: 'Montserrat', sans-serif;font-weight: 100;">
+                                                Frontend Web Developer : Erasys Group<br/>
+                                                <span><a href="https://www.bigindigital.com/" target="_blank">www.bigindigital.com</a></span>
+                                                </p>
+                                            </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                            <figure style="float: left;margin-right: 15px;">
+                                                <img src="img/narrada.png" alt="narrada" class="img-responsive">
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9">
+
+                                            <p style="font-size:13px;font-family: 'Montserrat', sans-serif;font-weight: 100;">
+                                            Jr. Frontend Web Developer : PT Vidha Inti Prajapti<br/>
+                                            <span><a href="https://narrada.com/" target="_blank">www.narrada.com</a></span>
                                         </p>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -197,36 +253,6 @@
             </div>
         </div>
     </div>
-
-    <table border="1" cellpadding="3" id="printTable" style="display:none;">
-        <tbody>
-            <tr>
-                <th>First Name</th>
-                <th>Last Name</th>		
-                <th>Points</th>
-            </tr>
-            <tr>
-                <td>Jill</td>
-                <td>Smith</td>		
-                <td>50</td>
-            </tr>
-            <tr>
-                <td>Eve</td>
-                <td>Jackson</td>		
-                <td>94</td>
-            </tr>
-            <tr>
-                <td>John</td>
-                <td>Doe</td>		
-                <td>80</td>
-            </tr>
-            <tr>
-                <td>Adam</td>
-                <td>Johnson</td>		
-                <td>67</td>
-            </tr>
-        </tbody>
-    </table>
 
 
 
@@ -237,29 +263,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script>
-        $('.collapse').collapse();
+        // $('.collapse').collapse();
 
-        function toggleIcon(e) {
-            $(e.target)
-            .prev('.panel-heading')
-            .find(".more-less")
-            .toggleClass('glyphicon-plus glyphicon-minus');
-        }
-        $('.panel-group').on('hidden.bs.collapse', toggleIcon);
-        $('.panel-group').on('shown.bs.collapse', toggleIcon);
-
-        function printData()
-            {
-            var divToPrint=document.getElementById("printTable");
-            newWin= window.open("");
-            newWin.document.write(divToPrint.outerHTML);
-            newWin.print();
-            newWin.close();
-            }
-
-            $('button').on('click',function(){
-            printData();
-            })
     </script>
 </body>
 </html>
