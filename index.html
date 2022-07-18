@@ -23,6 +23,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;0,800;1,800&display=swap" rel="stylesheet">
 </head> 
 <style>
     * {
@@ -36,7 +37,22 @@
         border-top:1px solid #ccc;
     }
 
+    .hello {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20vw;
+        position: absolute;
+        z-index: -1;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        line-height: 1;
+        flex-direction: column-reverse;
+        text-transform: uppercase;
 
+    }
     .panel-group .panel {
 		border-radius: 0;
 		box-shadow: none;
@@ -70,10 +86,27 @@
 	.panel-default > .panel-heading + .panel-collapse > .panel-body {
 		border-top-color: #EEEEEE;
 	}
-
+    .text-fill-transparent {
+        color: transparent;
+        -webkit-text-fill-color: black;
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: #ed1a3b;
+        -webkit-text-fill-color: transparent;
+    }
 </style>
 <body> 
 
+    <div class="hello">
+        <div>
+            <span class="text-fill-transparent">Halo!\</span>
+        </div>
+        <div>
+            <span class="text-fill-transparent">Selamat</span>
+        </div>
+         <div>
+            <span class="text-fill-transparent">\Datang</span>
+        </div>
+    </div>
     
     <div class="container" style="
         display: flex;
@@ -95,19 +128,19 @@
                 </div>
                 <img src="img/fav.png" class="rounded-circle img-responsive d-none d-md-block" width="150" height="150" style="box-shadow:2px 8px 15px #d3d3d3;margin-left:9px;">
             </div> -->
-            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding-top:20px;">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding-top:20px;padding-bottom:20px;background: #ffffff;">
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
                         <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingOne">
+                           <!--  <div class="panel-heading" role="tab" id="headingOne">
                                 <h4 class="panel-title">
                                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color:#000;">
                                         <strong style="font-size:1rem;">Profile.</strong>
                                         <i class="more-less">Seeking Human Kindness?</i>
                                     </a>
                                 </h4>
-                            </div>
-                            <div id="collapseOne" role="tabpanel" aria-labelledby="headingOne">
+                            </div> -->
+                            <div role="tabpanel" aria-labelledby="headingOne">
                                 <div class="panel-body">
                                    <!--  <h3>Dian Abdul Syahid</h3>
                                     <h6>UI / UX enthusiast</h6>
