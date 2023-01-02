@@ -1,0 +1,71 @@
+@use "../util/" as u;
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin-top:0;
+	line-height:1.2;
+	color:inherit;
+	text-rendering:optimizelegibility
+}
+
+h1 {
+    font-size: clamp(u.rem(16), u.rem(16) + 2vw, u.rem(50));
+}
+
+h2 {
+    font-size: clamp(u.rem(16), u.rem(14) + 1.5vw, u.rem(36));
+}
+
+h3 {
+    font-size: clamp(u.rem(20), u.rem(11) + 1vw, u.rem(33));
+}
+
+p {
+    margin-top:0;
+    font-size: u.rem(16)
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	vertical-align: top;
+	outline:0;
+	&:hover, &:visited, &:active  {
+		text-decoration: none;
+	}
+}
+
+a:focus,
+button:focus {
+	outline: 0;
+	outline: -webkit-focus-ring-color auto 0;
+	outline-offset: 0
+}
+
+textarea{
+	overflow:auto;
+	vertical-align:top
+}
+
+blockquote {
+	position: relative;
+	font-size: 20px;
+	font-weight: 400;
+	margin: 25px 40px;
+	&:before,
+	&:after {
+		font-family: u.$font-roboto-medium;	
+		font-size: 30px;
+		line-height: 1;
+		position: absolute;
+	}
+	&:before {
+		content: "\e901";
+		left: -40px;
+	}
+	&:after {
+		content: "\e900";
+		padding-left: 10px;
+	}
+}

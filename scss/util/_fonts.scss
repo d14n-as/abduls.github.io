@@ -1,0 +1,64 @@
+$font-din-black: 'DIN-black', sans-serif;
+$font-din-black-italic: 'DIN-black-italic', sans-serif;
+$font-esf-rounded-bold-italic: 'ESF-rounded-bold-italic', sans-serif;
+$font-fredokaOne: 'FredokaOne', sans-serif;
+$font-roboto-bold: 'Roboto-Bold', sans-serif;
+$font-roboto-medium: 'Roboto-Medium', sans-serif;
+$font-hey-comic: 'Hey-Comic', sans-serif;
+$font-avenir-medium: 'Avenir-Med', sans-serif;
+$font-opensans-condlight: 'OpenSans-CondLight', sans-serif;
+
+@font-face {
+    font-family: DIN-black;
+    src: url("../fonts/DIN-Black.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: DIN-black-italic;
+    src: url("../fonts/DIN-BlackItalic.ttf"); 
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: ESF-rounded-bold-italic;
+    src: url("../fonts/ESF-Rounded-Bold-Italic.ttf"); 
+    font-weight: 700;
+}
+
+
+@font-face {
+    font-family: FredokaOne;
+    src: url("../fonts/FredokaOne-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url("../fonts/Roboto-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Roboto-Medium;
+    src: url("../fonts/Roboto-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Hey-Comic;
+    src: url("../fonts/Hey-Comic.ttf"); 
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Avenir-Med;
+    src: url("../fonts/Avenir-Medium.ttf"); 
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: OpenSans-CondLight;
+    src: url("../fonts/OpenSans-CondLight.ttf");
+    font-weight: 700;
+}
