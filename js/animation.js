@@ -3,21 +3,20 @@ gsap.registerPlugin(ScrollTrigger);
 let sections = gsap.utils.toArray(".panel");
 
 let scrollTween = gsap.to(sections, {
-    xPercent: -100 * (sections.length - 1),
-    ease: "none", // <-- IMPORTANT!
+    xPercent: -100 * (sections.length),
+    ease: "none",
     scrollTrigger: {
       trigger: "#beginHorizonScroll",
       pin: true,
-      scrub: 0.1,
-      //snap: directionalSnap(1 / (sections.length - 1)),
-      end: "5000px"
+      scrub: 2,
+      end: "10000px"
     }
   });
 
-gsap.set(".box-1, .box-2", {y: 100});
-ScrollTrigger.defaults({markers: {startColor: "white", endColor: "white"}});
+// gsap.set(".box-1, .box-2", {y: 100});
+// ScrollTrigger.defaults({markers: {startColor: "white", endColor: "white"}});
 
-// red section
+
 gsap.to(".box-1", {
   y: -130,
   duration: 2,

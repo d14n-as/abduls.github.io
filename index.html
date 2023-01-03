@@ -41,8 +41,6 @@
     <meta name="twitter:image" content="images/thumbnail.jpg" />
   
     <!-- CSS -->
-    <link type="text/css" rel="stylesheet" href="./css/megamenu.css" />
-    <link type="text/css" rel="stylesheet" href="./css/magnific-popup.css" />
     <link type="text/css" rel="stylesheet" href="./dist/style.css" />
     
 </head> 
@@ -52,95 +50,138 @@
     <div id="beginHorizonScroll">
 
   
-        <div class="panel">
+        <div id="resume">
            <div class="container">
-                <p>
-                    Dian Abdul Syahid
-                </p>
-           </div>
 
-            <div class="bottom">
-                <div class="bottom__left">
-                    Scroll &gt;
+              <div class="profile">
+                <h1>
+                  Dian Abdul Syahid 
+                </h1>
+                <p>
+                  Front-End Web Developer 
+                </p>
+              </div>
+                
+              <div class="footer bottom">
+                <div class="bottom__right">
+                    Recent Work / Scrollllll &gt;
                 </div>
-            </div>
+              </div>
+
+           </div>
         </div>
         
         
         <section class="panel">
-          <div>
-          <pre class="code-block prettyprint lang-js linenums">gsap.to(".box-1", {
-        y: -130,
-        duration: 2,
-        ease: "elastic",
-        scrollTrigger: {
-          trigger: ".box-1",
-          containerAnimation: scrollTween,
-          start: "left center",
-          toggleActions: "play none none reset"
-        }
-      });</pre>
-            Fire an animation at a particular spot...
+          <div class="container">
+            <div class="content">
+              <figure>
+                <img src="./img/vik1.jpg" alt="Bangun Infrastruktur Darat, Konektivitas Jadi Utama">
+              </figure>
+            </div>
+            <div class="footer bottom nth-child-1">
+              <div class="bottom__right">
+                 <div class="container">
+                    <p>01/ Visual Interaktif Kompas: <a href="https://vip.kompas.com/konektivitas-jalan-tol/" target="_blank">Bangun Infrastruktur Darat, Konektivitas Jadi Utama</a> | 2022</p>
+                 </div>
+              </div>
+            </div>
           </div>
-          <div class="box-1 box">box-1</div>
         </section>
         
         <section class="panel">
-          <div>
-          <pre class="code-block prettyprint lang-js linenums">gsap.to(".box-2", {
-        y: -120,
-        backgroundColor: "#1e90ff",
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".box-2",
-          containerAnimation: scrollTween,
-          start: "center 80%",
-          end: "center 20%",
-          scrub: true
-        }
-      });</pre>
-        ...or scrub it back &amp; forth with the scrollbar
-      </div>
-          <div class="box-2 box">box-2</div>
+         
+          <div class="container">
+            <div class="content">
+              <figure>
+                <img src="./img/vik2.jpg" alt="Mengenal Lebih Jauh Bendungan">
+              </figure>
+            </div>
+            <div class="footer bottom">
+              <div class="bottom__right">
+                  <p>02/ Visual Interaktif Kompas: <a href="https://vip.kompas.com/mengenal-lebih-jauh-bendungan/" target="_blank">Mengenal Lebih Jauh Bendungan</a> | 2022</p>
+              </div>
+            </div>
+          </div>
+          
         </section>
         <section class="panel">
-          <div>
-          <pre class="code-block prettyprint lang-js linenums">ScrollTrigger.create({
-        trigger: ".box-3",
-        containerAnimation: scrollTween,
-        toggleClass: "active",
-        start: "center 60%"
-      });</pre>
-            Toggle a CSS class
+         
+          <div class="container">
+            <div class="content">
+              <figure>
+                <img src="./img/vik3.jpg" alt="Transportasi Menghubungkan Indonesia">
+              </figure>
+            </div>
+            <div class="footer bottom">
+              <div class="bottom__right">
+                  <p>03/ Visual Interaktif Kompas: <a href="https://vip.kompas.com/transportasi-menghubungkan-indonesia/" target="_blank">Transportasi Menghubungkan Indonesia</a> | 2022</p>
+              </div>
+            </div>
           </div>
-          <div class="box-3 box">box-3</div>
+          
         </section>
+
         <section class="panel">
-          <div>
-          <pre class="code-block prettyprint lang-js linenums">ScrollTrigger.create({
-        trigger: ".green",
-        containerAnimation: scrollTween,
-        start: "center 65%",
-        end: "center 51%",
-        onEnter: () => console.log("enter"),
-        onLeave: () => console.log("leave"),
-        onEnterBack: () => console.log("enterBack"),
-        onLeaveBack: () => console.log("leaveBack"),
-        onToggle: self => console.log("active", self.isActive)
-      });</pre>
-            Use the rich callback system
+        
+          <div class="container">
+            <div class="content">
+              <figure>
+                <img src="./img/porto4.jpg" alt="Perjalanan mengeksplorasi sembilan destinasi indah dari barat ke timur Indonesia
+                untuk menangkap momen bercahaya dalam karya fotografi smartphone">
+              </figure>
+            </div>
+            <div class="footer bottom">
+              <div class="bottom__right">
+                  <p>04/ Microsite: <a href="https://realme9lights.kompas.com/" target="_blank">Nawa Cahaya</a> | 2022</p>
+              </div>
+            </div>
           </div>
+
+        </section>
+
+        <section class="panel">
+        
+          <div class="container">
+            <div class="content">
+              <figure>
+                <img src="./img/porto5.jpg" alt="SingapoReimagine (SRI) adalah kampanye internasional dari Singapore Tourism Board untuk meningkatkan kembali antusiasme berwisata ke Singapura. Selain itu, kampanye ini juga sekaligus bertujuan menghidupkan kembali dunia pariwisata yang sempat terhenti.">
+              </figure>
+            </div>
+            <div class="footer bottom">
+              <div class="bottom__right">
+                  <p>05/ Microsite: <a href="https://www.unlocksingapore.id/" target="_blank">Unlock Singapore</a> | 2022</p>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="panel">
+        
+          <div class="container">
+            <div class="content">
+              <figure>
+                <img src="./img/porto6.jpg" alt="Wander Digital Musics serves as a platform for musician, song writers and audio content creators">
+              </figure>
+            </div>
+            <div class="footer bottom">
+              <div class="bottom__right">
+                  <p>06/ Microsite: <a href="https://wanderdigitalmusic.com/" target="_blank">Wander Digital Musics</a> | 2021</p>
+              </div>
+            </div>
+          </div>
+
         </section>
     </div>
       
       
       
       
-      <header>
-        <a href="https://greensock.com/scrolltrigger">
-          <img class="greensock-icon" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/scroll-trigger-logo-light.svg" width="200" height="64" />
-        </a> 
-      </header>
+    <div class="lastPage">
+      <p>More Project &gt; <a href="https://www.behance.net/dian_abdul" target="_blank">Behance</a></p>
+      <p>Let's build something cool &gt; <a href="mailto:4bdulsyahid@gmail.com">Email</a></p>
+    </div>
 
 
     
