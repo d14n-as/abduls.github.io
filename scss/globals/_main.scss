@@ -20,6 +20,11 @@ body {
   .profile {
     position: absolute;
     top:20vh;
+    p {
+      a {
+        color: hsl(240, 100%, 50%) !important;
+      }
+    }
   }
   h1 {
     margin:0;
@@ -30,6 +35,7 @@ body {
     width: 100%;
     position: absolute;
     border-top: u.rem(1) solid var(--charcoal);
+
   }
 }
 
