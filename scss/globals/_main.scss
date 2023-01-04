@@ -68,13 +68,19 @@ body {
     flex-direction: column;
     text-align: left;
     figure {
+      @include u.breakpoint-down(small) {
+        margin:0 auto;
+      }
       img {
         border-radius: u.rem(15);
         -webkit-border-radius: u.rem(15);
         -moz-border-radius: u.rem(15);
         -ms-border-radius: u.rem(15);
         -o-border-radius: u.rem(15);
-}
+        @include u.breakpoint-down(small) {
+          height: 70vh;
+        }
+      }
     }
   }
   .footer {
