@@ -13,31 +13,30 @@ let scrollTween = gsap.to(sections, {
     }
   });
 
-// gsap.set(".box-1, .box-2", {y: 100});
-// ScrollTrigger.defaults({markers: {startColor: "white", endColor: "white"}});
+gsap.set(".parallax1, .parallax2, .parallax3, .parallax4, .parallax5, .parallax6, .parallax7, .parallax8, .parallax9", {x: 100});
+ScrollTrigger.defaults({markers: {startColor: "white", endColor: "white"}});
 
 
-gsap.to(".box-1", {
-  y: -130,
-  duration: 2,
-  ease: "elastic",
+gsap.to(".parallax1", {
+  x: -130,
+  ease: "none",
   scrollTrigger: {
-    trigger: ".box-1",
+    trigger: ".parallax1",
     containerAnimation: scrollTween,
-    start: "left center",
-    toggleActions: "play none none reset",
-    id: "1",
+    start: "center 80%",
+    end: "center 20%",
+    scrub: true,
+    id: "1"
   }
 });
 
 
-// gray section
-gsap.to(".box-2", {
-  y: -120,
-  backgroundColor: "#1e90ff",
+
+gsap.to(".parallax2", {
+  x: -130,
   ease: "none",
   scrollTrigger: {
-    trigger: ".box-2",
+    trigger: ".parallax2",
     containerAnimation: scrollTween,
     start: "center 80%",
     end: "center 20%",
@@ -46,16 +45,102 @@ gsap.to(".box-2", {
   }
 });
 
-// purple section
-ScrollTrigger.create({
-  trigger: ".box-3",
-  containerAnimation: scrollTween,
-  toggleClass: "active",
-  start: "center 60%",
-  id: "3"
+
+gsap.to(".parallax3", {
+  x: -130,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".parallax3",
+    containerAnimation: scrollTween,
+    start: "center 80%",
+    end: "center 20%",
+    scrub: true,
+    id: "3"
+  }
 });
 
-// green section
+
+gsap.to(".parallax4", {
+  x: -130,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".parallax4",
+    containerAnimation: scrollTween,
+    start: "center 80%",
+    end: "center 20%",
+    scrub: true,
+    id: "4"
+  }
+});
+
+
+gsap.to(".parallax5", {
+  x: -130,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".parallax5",
+    containerAnimation: scrollTween,
+    start: "center 80%",
+    end: "center 20%",
+    scrub: true,
+    id: "5"
+  }
+});
+
+
+gsap.to(".parallax6", {
+  x: -130,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".parallax6",
+    containerAnimation: scrollTween,
+    start: "center 80%",
+    end: "center 20%",
+    scrub: true,
+    id: "6"
+  }
+});
+
+
+gsap.to(".parallax7", {
+  x: -130,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".parallax7",
+    containerAnimation: scrollTween,
+    start: "center 80%",
+    end: "center 20%",
+    scrub: true,
+    id: "7"
+  }
+});
+
+gsap.to(".parallax8", {
+  x: -130,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".parallax8",
+    containerAnimation: scrollTween,
+    start: "center 80%",
+    end: "center 20%",
+    scrub: true,
+    id: "8"
+  }
+});
+
+gsap.to(".parallax9", {
+  x: -130,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".parallax9",
+    containerAnimation: scrollTween,
+    start: "center 80%",
+    end: "center 20%",
+    scrub: true,
+    id: "9"
+  }
+});
+
 ScrollTrigger.create({
   trigger: ".green",
   containerAnimation: scrollTween,
