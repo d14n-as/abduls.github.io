@@ -9,9 +9,21 @@ body {
   font-family: u.$font-din-black;
   overflow-x: hidden;
   margin:0;
-  padding:0;
+  padding:0; 
 }
 
+
+#preloader {
+  background-color: #ffffff;
+  width:100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  position: fixed;
+  z-index: 9;
+  top:0
+}
 
 #resume {
   position: relative;
