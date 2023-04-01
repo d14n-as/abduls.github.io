@@ -28,6 +28,7 @@ body {
 .masthead {
   position: absolute;
   width: 100%;
+  z-index: 9;
   &-container {
     max-width: u.rem(740);
     width: 100%;
