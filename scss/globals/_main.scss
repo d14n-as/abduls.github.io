@@ -42,6 +42,12 @@ body {
         width: u.rem(70);
         height: u.rem(70);
         margin-right: u.rem(15);
+        border-bottom: none !important;
+        @include u.breakpoint-down(medium) {
+          float: none;
+          display: block;
+          margin: 0 auto;
+        }
         img {
           border-radius: u.rem(5);
           -webkit-border-radius: u.rem(5);
@@ -53,6 +59,12 @@ body {
       .site-info {
         float: left;
         margin-top: u.rem(11);
+        @include u.breakpoint-down(medium) {
+          float: none;
+          display: block;
+          margin: 0 auto;
+          text-align: center;
+        }
         .site-name {
           margin: 0;
           color: #333 !important;
@@ -63,6 +75,7 @@ body {
           letter-spacing: u.rem(1);
           a {
             color: #333 !important;
+            border-bottom: none !important;
           }
         }
         .site-description {
@@ -70,6 +83,9 @@ body {
           color: #666;
           font-size: u.rem(16);
           font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+          @include u.breakpoint-down(medium) {
+            margin: u.rem(3) 0;
+          }
         }
       }
       nav {
@@ -83,7 +99,15 @@ body {
             text-align: right;
             font-weight: 300;
             letter-spacing: u.rem(1);
-          }
+            border-bottom: none !important;
+        }
+        @include u.breakpoint-down(medium) {
+          float: none;
+          margin-top: u.rem(9) !important;
+          display: block;
+          font-size: 16px;
+          text-align: center;
+        }
       }
       &.clearfix {
         &::after,
