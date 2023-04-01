@@ -170,6 +170,7 @@ body {
   background-color: var(--charcoal);
   color: var(--white);  
   border-right: none !important;
+  z-index: 2;
   .content {
     position: relative;
     height: 90vh;
