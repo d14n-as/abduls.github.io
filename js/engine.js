@@ -1,6 +1,5 @@
 
 $(document).ready(function() {
-    // Preload
     if (
         $(window).load(function() {
           $('body').addClass('overflowhidden');
