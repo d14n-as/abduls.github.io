@@ -14,8 +14,11 @@ shows.forEach((show, i) => {
     duration: 1,
     ease: "power3.out",
     overwrite: "auto",
+    markers: false,
   }),
     ScrollTrigger.create({
+      trigger: show,
+      markers: false,
       onEnter: () => gsap.to(show, { y: 0, opacity: 1, stagger: 0.5 }),
       onLeave: () => gsap.to(show, { y: 0, opacity: 1, stagger: 0.3 }),
     });
