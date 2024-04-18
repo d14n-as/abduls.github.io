@@ -13,9 +13,23 @@ let scrollTween = gsap.to(sections, {
     }
   });
 
-gsap.set(".parallax1, .parallax2, .parallax3, .parallax4, .parallax5, .parallax6, .parallax7, .parallax8, .parallax9", {x: 100});
+gsap.set(".parallax0,.parallax1, .parallax2, .parallax3, .parallax4, .parallax5, .parallax6, .parallax7, .parallax8, .parallax9", {x: 100});
 ScrollTrigger.defaults({markers: {startColor: "white", endColor: "white"}});
 
+
+
+gsap.to(".parallax0", {
+  x: -130,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".parallax0",
+    containerAnimation: scrollTween,
+    start: "center 80%",
+    end: "center 20%",
+    scrub: true,
+    id: "0"
+  }
+});
 
 gsap.to(".parallax1", {
   x: -130,
