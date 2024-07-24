@@ -3,19 +3,32 @@ gsap.registerPlugin(ScrollTrigger);
 let sections = gsap.utils.toArray(".panel");
 
 let scrollTween = gsap.to(sections, {
-    xPercent: -100 * (sections.length),
-    ease: "none",
-    scrollTrigger: {
-      trigger: "#beginHorizonScroll",
-      pin: true,
-      scrub: 2,
-      end: "10000px"
-    }
-  });
+  xPercent: -100 * (sections.length),
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#beginHorizonScroll",
+    pin: true,
+    scrub: 2,
+    end: "10000px"
+  }
+});
 
-gsap.set(".parallax0,.parallax1, .parallax2, .parallax3, .parallax4, .parallax5, .parallax6, .parallax7, .parallax8, .parallax9", {x: 100});
-ScrollTrigger.defaults({markers: {startColor: "white", endColor: "white"}});
+gsap.set(".parallax00, .parallax0,.parallax1, .parallax2, .parallax3, .parallax4, .parallax5, .parallax6, .parallax7, .parallax8, .parallax9", { x: 100 });
+ScrollTrigger.defaults({ markers: { startColor: "white", endColor: "white" } });
 
+
+gsap.to(".parallax00", {
+  x: -130,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".parallax0",
+    containerAnimation: scrollTween,
+    start: "center 80%",
+    end: "center 20%",
+    scrub: true,
+    id: "1"
+  }
+});
 
 
 gsap.to(".parallax0", {
@@ -27,7 +40,7 @@ gsap.to(".parallax0", {
     start: "center 80%",
     end: "center 20%",
     scrub: true,
-    id: "0"
+    id: "1"
   }
 });
 
@@ -169,15 +182,15 @@ ScrollTrigger.create({
 });
 
 // only show the relevant section's markers at any given time
-gsap.set(".gsap-marker-start, .gsap-marker-end, .gsap-marker-scroller-start, .gsap-marker-scroller-end", {autoAlpha: 0});
-["red","gray","purple","green"].forEach((triggerClass, i) => {
+gsap.set(".gsap-marker-start, .gsap-marker-end, .gsap-marker-scroller-start, .gsap-marker-scroller-end", { autoAlpha: 0 });
+["red", "gray", "purple", "green"].forEach((triggerClass, i) => {
   ScrollTrigger.create({
     trigger: "." + triggerClass,
     containerAnimation: scrollTween,
     start: "left 30%",
     end: i === 3 ? "right right" : "right 30%",
     markers: false,
-    onToggle: self => gsap.to(".marker-" + (i+1), {duration: 0.25, autoAlpha: self.isActive ? 1 : 0})
+    onToggle: self => gsap.to(".marker-" + (i + 1), { duration: 0.25, autoAlpha: self.isActive ? 1 : 0 })
   });
 });
 
