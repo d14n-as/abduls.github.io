@@ -13,15 +13,28 @@ let scrollTween = gsap.to(sections, {
   }
 });
 
-gsap.set(".parallax00, .parallax0,.parallax1, .parallax2, .parallax3, .parallax4, .parallax5, .parallax6, .parallax7, .parallax8, .parallax9", { x: 100 });
+gsap.set(".parallax12, .parallax11, .parallax10,.parallax1, .parallax2, .parallax3, .parallax4, .parallax5, .parallax6, .parallax7, .parallax8, .parallax9", { x: 100 });
 ScrollTrigger.defaults({ markers: { startColor: "white", endColor: "white" } });
 
 
-gsap.to(".parallax00", {
+gsap.to(".parallax12", {
   x: -130,
   ease: "none",
   scrollTrigger: {
-    trigger: ".parallax0",
+    trigger: ".parallax12",
+    containerAnimation: scrollTween,
+    start: "center 80%",
+    end: "center 20%",
+    scrub: true,
+    id: "1"
+  }
+});
+
+gsap.to(".parallax11", {
+  x: -130,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".parallax11",
     containerAnimation: scrollTween,
     start: "center 80%",
     end: "center 20%",
@@ -31,11 +44,11 @@ gsap.to(".parallax00", {
 });
 
 
-gsap.to(".parallax0", {
+gsap.to(".parallax10", {
   x: -130,
   ease: "none",
   scrollTrigger: {
-    trigger: ".parallax0",
+    trigger: ".parallax10",
     containerAnimation: scrollTween,
     start: "center 80%",
     end: "center 20%",
