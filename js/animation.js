@@ -20,7 +20,7 @@ gsap.to(".parallax13", {
   x: -130,
   ease: "none",
   scrollTrigger: {
-    trigger: ".parallax12",
+    trigger: ".parallax13",
     containerAnimation: scrollTween,
     start: "center 80%",
     end: "center 20%",
